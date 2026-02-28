@@ -1,73 +1,74 @@
-# Welcome to your Lovable project
+# Aura26 Web Application
 
-## Project info
+This repository contains the **Aura26** landing page built with React, Vite, Tailwind CSS and a 3D animated background using `@react-three/fiber` and `@react-three/drei`.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Features
 
-## How can I edit this code?
+- Responsive React UI powered by Tailwind CSS and Shadcn/ui components
+- Animated hero section with a live WebGL background
+- Countdown timer, navigation, and interactive forms
+- Uses React Router for page routing
+- 3D assets handled via Three.js and React Three Fiber
+- Built with TypeScript for strong typing
 
-There are several ways of editing your application.
+## 🛠 Installation
 
-**Use Lovable**
+```bash
+# clone the repo
+git clone https://github.com/JAYASURYA-5/Aura26.git
+cd Aura26
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+# install dependencies
+npm install
+```
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🔧 Development
 
-**Use your preferred IDE**
+Start the Vite dev server:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:3000` (or another port if 3000 is taken).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## ✅ Production Build
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📁 Project Structure
 
-## What technologies are used for this project?
+```
+src/
+  components/     # reusable UI & 3D components
+  pages/          # routeable pages (Index, Events, Contact, etc.)
+  hooks/          # custom React hooks
+  lib/            # constants & utility functions
+  assets/         # static images and fonts
+```
 
-This project is built with:
+## 📦 Dependencies Highlights
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `react`, `react-dom` 18
+- `vite` + `@vitejs/plugin-react-swc`
+- `tailwindcss` with shadcn/ui components
+- `three`, `@react-three/fiber`, `@react-three/drei`
+- `framer-motion` for animations
+- `react-router-dom` for client routing
+- `vitest` for testing
 
-## How can I deploy this project?
+## 💡 Notes
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+- Browserslist data may show warnings; run `npx update-browserslist-db@latest` regularly.
+- Three.js version locked to 0.152.0 for compatibility with downstream packages.
 
-## Can I connect a custom domain to my Lovable project?
+## 📄 License
 
-Yes, you can!
+This project is licensed under the MIT License.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Enjoy building Aura26! 🎉
